@@ -12,6 +12,6 @@ module.exports = {
     'standard'
   ],
   rules: {
-
+    'space-before-function-paren': 0,
   }
 }
