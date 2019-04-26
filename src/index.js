@@ -32,10 +32,7 @@ const MSG = {
 }
 
 const UnitHelper = (number, type = null, dp = null, replace = true) => {
-  if (typeof type === 'number' || type === null) {
-    dp = type
-    return BN(number).toFormat(dp)
-  }
+  if (typeof type === 'number' || type === null) return BN(number).toFormat(dp = type)
   if (typeof type === 'string') type = type.split('_')
   else throw new Error(MSG[101])
   if (type.length !== 2) throw new Error(MSG[102])
