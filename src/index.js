@@ -31,7 +31,7 @@ const MSG = {
   103: '103: Unit error!'
 }
 
-const UnitConverter = (number, type = null, dp = null, replace = true) => {
+const UnitHelper = (number, type = null, dp = null, replace = true) => {
   if (typeof type === 'number' || type === null) {
     dp = type
     return BN(number).toFormat(dp)
@@ -54,4 +54,4 @@ const UnitConverter = (number, type = null, dp = null, replace = true) => {
   return BN.isBigNumber(number) ? resNum : resNum.toString(10)
 }
 
-export default UnitConverter
+export default UnitHelper
