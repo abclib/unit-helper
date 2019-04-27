@@ -33,7 +33,7 @@
 
 <br />
 
-A Blockchain Encrypted Digital Currency Converter.
+A Blockchain Encrypted Digital Currency Unit Converter.
 
 ## Install
 
