@@ -1,7 +1,7 @@
 {
   "name": "@abckey/unit-helper",
   "version": "0.1.0",
-  "description": "A Blockchain Encrypted Digital Currency Converter.",
+  "description": "A Blockchain Encrypted Digital Currency Unit Converter.",
   "author": "abckey <hi@abckey.com>",
   "license": "MIT",
   "main": "dist/index.js",
