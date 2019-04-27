@@ -1,4 +1,6 @@
 ## unit-helper
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FabcKeyCOM%2Funit-helper.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FabcKeyCOM%2Funit-helper?ref=badge_shield)
+
 
 <div>
   <!-- Dependency Status -->
@@ -57,3 +59,7 @@ UnitHelper('100000000', 'sat_doge')                     // '1'
 UnitHelper('1000000000000000000', 'wei_eth')            // '1'
 
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FabcKeyCOM%2Funit-helper.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FabcKeyCOM%2Funit-helper?ref=badge_large)
