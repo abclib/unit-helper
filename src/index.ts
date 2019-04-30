@@ -39,7 +39,7 @@ const UnitHelper = (
   dp?: number,
   replace: boolean = true
 ) => {
-  if (typeof type === 'number' || type === undefined) return new BigNum(value).toFormat(type)
+                      if (typeof type === 'number' || type === undefined) return new BigNum(value).toFormat(type)
   if (typeof type !== 'string') return value
   const unitA = type.slice(0, type.indexOf('_') || type.length)
   const unitB = type.slice(type.indexOf('_') + 1)
