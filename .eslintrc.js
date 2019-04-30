@@ -1,17 +1,24 @@
 module.exports = {
   root: true,
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    sourceType: 'module',
-    parser: 'babel-eslint'
+    project: './tsconfig.json'
   },
   env: {
-    'shared-node-browser': true,
+    browser: true,
+    node: true,
+    amd: true,
     jest: true
   },
   extends: [
-    'standard'
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'prettier/@typescript-eslint'
+  ],
+  plugins: [
+    '@typescript-eslint'
   ],
   rules: {
-    'space-before-function-paren': 0
+    'prettier/prettier': 'error'
   }
 }
