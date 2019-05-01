@@ -1,6 +1,4 @@
 ## unit-helper
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FabcKeyCOM%2Funit-helper.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FabcKeyCOM%2Funit-helper?ref=badge_shield)
-
 
 <div>
   <!-- Dependency Status -->
@@ -30,7 +28,6 @@
   <a href="https://coveralls.io/r/@abckey/unit-helper">
     <img src="https://coveralls.io/repos/github/@abckey/unit-helper/badge.svg" alt="Test Coverage" />
   </a>
-
 </div>
 
 <br />
@@ -62,4 +59,5 @@ UnitHelper('1000000000000000000', 'wei_eth')            // '1'
 
 
 ## License
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FabcKeyCOM%2Funit-helper.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FabcKeyCOM%2Funit-helper?ref=badge_large)
