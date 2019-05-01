@@ -1,36 +1,5 @@
 ## unit-helper
-
-<div>
-  <!-- Dependency Status -->
-  <a href="https://david-dm.org/abcKeyCOM/unit-helper">
-    <img src="https://david-dm.org/abcKeyCOM/unit-helper.svg"
-    alt="Dependency Status" />
-  </a>
-
-  <!-- devDependency Status -->
-  <a href="https://david-dm.org/abcKeyCOM/unit-helper#info=devDependencies">
-    <img src="https://david-dm.org/abcKeyCOM/unit-helper/dev-status.svg" alt="devDependency Status" />
-  </a>
-
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/abcKeyCOM/unit-helper">
-    <img src="https://travis-ci.org/abcKeyCOM/unit-helper.svg"
-    alt="Build Status" />
-  </a>
-
-  <!-- NPM Version -->
-  <a href="https://www.npmjs.com/package/@abckey/unit-helper">
-    <img src="https://img.shields.io/npm/v/@abckey/unit-helper.svg"
-    alt="NPM version" />
-  </a>
-
-  <!-- Test Coverage -->
-  <a href="https://coveralls.io/r/@abckey/unit-helper">
-    <img src="https://coveralls.io/repos/github/@abckey/unit-helper/badge.svg" alt="Test Coverage" />
-  </a>
-</div>
-
-<br />
+[![NPM version](https://img.shields.io/npm/v/@abckey/unit-helper.svg)](https://www.npmjs.com/package/@abckey/unit-helper)
 
 A Blockchain Encrypted Digital Currency Unit Converter.
 
