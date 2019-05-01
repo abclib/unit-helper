@@ -1,22 +1,24 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "newLine": "lf",
+    "module": "commonjs",
+    "outDir": "dist",
+    "declaration": true,
     "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "newLine": "lf",
     "removeComments": true,
     "strictNullChecks": true,
     "preserveConstEnums": true,
     "experimentalDecorators": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedParameters": true,
     "noImplicitReturns":true,
     "noUnusedLocals": true,
     "noImplicitAny": true,
     "noEmitOnError": true,
-    "declarationDir": "dist/types",
-    "declaration": true
+
   },
   "include": [
     "src/**/*"

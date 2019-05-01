@@ -1,5 +1,5 @@
 import BigNum from 'bignumber.js'
-import UnitConverter from '../src/index'
+import UnitConverter from '../dist/index'
 
 test(`('9876543210.9876543210') => '9,876,543,210.987654321'`, () => {
   const res = UnitConverter('9876543210.9876543210')

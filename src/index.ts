@@ -25,12 +25,12 @@ const UNITS: Array<{ [key: string]: string }> = [
   }
 ]
 
-const _valueAB = (unitA: string, unitB: string) => {
+const _valueAB = (unitA: string, unitB: string): string[] => {
   for (let item of UNITS) {
     if (!(item[unitA] && item[unitB])) continue
     return [item[unitA], item[unitB]]
   }
-  return [1, 1]
+  return ['1', '1']
 }
 
 const UnitHelper = (
@@ -38,8 +38,8 @@ const UnitHelper = (
   type?: string | number,
   dp?: number,
   replace: boolean = true
-) => {
-                      if (typeof type === 'number' || type === undefined) return new BigNum(value).toFormat(type)
+): BigNum.Value  => {
+  if (typeof type === 'number' || type === undefined) return new BigNum(value).toFormat(type)
   if (typeof type !== 'string') return value
   const unitA = type.slice(0, type.indexOf('_') || type.length)
   const unitB = type.slice(type.indexOf('_') + 1)
