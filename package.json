@@ -1,6 +1,6 @@
 {
   "name": "@abckey/unit-helper",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A Blockchain Encrypted Digital Currency Unit Converter.",
   "author": "abckey <hi@abckey.com>",
   "license": "MIT",
@@ -14,9 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abcKeyCOM/address-helper.git"
+    "url": "https://github.com/abcKeyCOM/unit-helper.git"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.12",
     "@types/node": "^11.13.8",
     "jest": "^24.7.1",
     "ts-jest": "^24.0.2",
