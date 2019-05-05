@@ -1,9 +1,5 @@
 import BigNum from 'bignumber.js'
 
-BigNum.config({
-  ROUNDING_MODE: BigNum.ROUND_DOWN
-})
-
 const UNITS: Array<{ [key: string]: string }> = [
   {
     btc: '1',
@@ -35,19 +31,20 @@ const _valueAB = (unitA: string, unitB: string): string[] => {
 
 const UnitHelper = (
   value: BigNum.Value,
-  type?: string | number,
-  dp?: number,
-  replace: boolean = true
-): BigNum.Value  => {
-  if (typeof type === 'number' || type === undefined) return new BigNum(value).toFormat(type)
-  if (typeof type !== 'string') return value
+  type?: string
+) => {
+  if (typeof value === 'string') value = value.replace(/,/g, '')
+  let _this: any = new BigNum(value)
+  if (type === undefined) return _this
   const unitA = type.slice(0, type.indexOf('_') || type.length)
   const unitB = type.slice(type.indexOf('_') + 1)
   const valueAB = _valueAB(unitA, unitB)
-  let resNum: BigNum.Value = new BigNum(value).times(valueAB[1]).div(valueAB[0])
-  if (typeof dp === 'number') resNum = resNum.toFormat(dp)
-  if (!BigNum.isBigNumber(value) && replace) resNum = resNum.toString().replace(/(?:\.0*|(\.\d+?)0+)$/, '$1')
-  return BigNum.isBigNumber(value) ? resNum : resNum.toString(10)
+  _this = _this.times(valueAB[1]).div(valueAB[0])
+  _this.dpFormat = (dp?: number, rm: number = BigNum.ROUND_DOWN) => {
+    if (dp === undefined) return _this.toFormat()
+    else return _this.dp(dp, rm).toFormat()
+  }
+  return _this
 }
 
 export default UnitHelper

@@ -1,6 +1,6 @@
 {
   "name": "@abckey/unit-helper",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "A Blockchain Encrypted Digital Currency Unit Converter.",
   "author": "abckey <hi@abckey.com>",
   "license": "MIT",
@@ -18,10 +18,10 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.12",
-    "@types/node": "^11.13.8",
-    "jest": "^24.7.1",
+    "@types/node": "^11.13.10",
+    "jest": "^24.8.0",
     "ts-jest": "^24.0.2",
-    "typescript": "^3.3.3"
+    "typescript": "^3.4.5"
   },
   "dependencies": {
     "bignumber.js": "^8.1.1"
