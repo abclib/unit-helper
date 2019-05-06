@@ -51,4 +51,3 @@ class UnitHelper extends BigNumber {
 const _UnitHelper = (value: BigNumber.Value, type?: string) => new UnitHelper(value, type)
 
 export default _UnitHelper
-
