@@ -13,7 +13,7 @@ class UnitHelper extends BigNumber {
     super(this.times(valueAB[1]).div(valueAB[0]))
   }
 
-  static UNITS_MAP: Array<{ [key: string]: string }> = [
+  static UNITS_MAP = [
     {
       btc: '1',
       ltc: '1',
