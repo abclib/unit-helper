@@ -10,7 +10,6 @@
     "strict": true,
     "allowJs": false,
     "noImplicitReturns":true,
-    "noImplicitThis": true,
     "noEmitOnError": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
