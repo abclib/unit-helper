@@ -8,25 +8,34 @@
   "scripts": {
     "tsc:check": "tsc --noEmit",
     "tsc:watch": "npm run tsc:check -- --watch",
-    "build": "tsc",
-    "prepare": "npm run build",
-    "test": "jest"
+    "build": "rimraf dist && tsc",
+    "test": "npm run build & ava -v",
+    "prepare": "npm run test"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/abcKeyCOM/unit-helper.git"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.12",
-    "@types/node": "^11.13.10",
-    "jest": "^24.8.0",
-    "ts-jest": "^24.0.2",
-    "typescript": "^3.4.5"
+    "@types/node": "^12.7.4",
+    "ava": "^2.3.0",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
   },
   "dependencies": {
-    "bignumber.js": "^8.1.1"
+    "bignumber.js": "^9.0.0"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
 }
